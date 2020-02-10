@@ -79,7 +79,6 @@ horseshoe
 hospital
 hotel
 ice
-ice cream
 india
 iron
 ivory
@@ -100,7 +99,8 @@ lawyer
 lead
 lemon
 limousine
-leadlock
+lead
+lock
 log
 mammoth
 maple
@@ -115,7 +115,6 @@ mouth
 mug
 needle
 net
-new york
 night
 note
 novel
