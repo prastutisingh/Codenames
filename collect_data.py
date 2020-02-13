@@ -27,7 +27,7 @@ def main():
 
             # write chosen clue to answers file when button is clicked
             def btn_click(i, item):
-                answers.write(str(i - 1) + ' ')
+                answers.write(str(i - 1) + '.')
                 answers.write(item.strip() + '\n')
                 var.set(item.strip())
 
@@ -41,7 +41,8 @@ def main():
                     i += 1
                     pass
                 else:
-                    full_list = line.strip('\n').split(',')
+                    input_line = line.split('.')
+                    full_list = input_line[1].strip('\n').split(',')
                     good = full_list[:3]
                     bad = full_list[3:9]
                     clues = full_list[9:]
