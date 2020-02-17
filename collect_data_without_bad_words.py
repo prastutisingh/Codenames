@@ -56,8 +56,8 @@ def main():
 
                     tk.Label(top_frame, text='Good words:', font=('Helvetica', 16)).pack(pady=25)
                     tk.Label(top_frame, text=', '.join(good), fg='green', font=('Helvetica', 16)).pack()
-                    tk.Label(top_frame, text='Bad words:', font=('Helvetica', 16)).pack(pady=25)
-                    tk.Label(top_frame, text=', '.join(bad), fg='red', font=('Helvetica', 16)).pack()
+                    # tk.Label(top_frame, text='Bad words:', font=('Helvetica', 16)).pack(pady=25)
+                    # tk.Label(top_frame, text=', '.join(bad), fg='red', font=('Helvetica', 16)).pack()
 
                     clue_buttons = []
                     for item in clues:
