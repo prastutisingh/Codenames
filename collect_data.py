@@ -16,13 +16,13 @@ def main():
     var = tk.StringVar()
 
     try:
-        current_count = len(open('data_10000_vocab.txt').readlines())
+        current_count = len(open('data_25000_vocab.txt').readlines())
     except FileNotFoundError:
         current_count = 0
         print('Thanks for doing this!')
 
-    with open('data_10000_vocab.txt', 'a+') as answers:
-        with open('examples_10000_vocab.txt', 'r') as examples:
+    with open('data_25000_vocab.txt', 'a+') as answers:
+        with open('examples_25000_vocab.txt', 'r') as examples:
             should_close = tk.BooleanVar()
 
             # write chosen clue to answers file when button is clicked
@@ -44,7 +44,8 @@ def main():
                     input_line = line.split('.')
                     full_list = input_line[1].strip('\n').split(',')
                     good = full_list[:3]
-                    clues = full_list[3:]
+                    bad = full_list[3:4]
+                    clues = full_list[4:]
 
                     top_frame = tk.Frame(window)
                     top_frame.pack()
