@@ -48,8 +48,8 @@ def main():
                 else:
                     input_line = line.split('.')
                     full_list = input_line[1].strip('\n').split(',')
-                    good = full_list[:3]
-                    clues = full_list[3:]
+                    good = full_list[:2]
+                    clues = full_list[2:]
 
                     top_frame = tk.Frame(window)
                     top_frame.pack()
