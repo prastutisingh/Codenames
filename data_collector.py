@@ -16,13 +16,13 @@ def main():
     var = tk.StringVar()
 
     try:
-        current_count = len(open('data_50000_vocab.txt').readlines())
+        current_count = len(open('data.txt').readlines())
     except FileNotFoundError:
         current_count = 0
         print('Thanks for doing this!')
 
-    with open('data_50000_vocab.txt', 'a+') as answers:
-        with open('examples_50000_vocab_nobadwords.txt', 'r') as examples:
+    with open('data.txt', 'a+') as answers:
+        with open('examples.txt', 'r') as examples:
             should_close = tk.BooleanVar()
 
             # write chosen clue to answers file when button is clicked
@@ -48,8 +48,8 @@ def main():
                 else:
                     input_line = line.split('.')
                     full_list = input_line[1].strip('\n').split(',')
-                    good = full_list[:2]
-                    clues = full_list[2:]
+                    good = full_list[:3]
+                    clues = full_list[4:]
 
                     top_frame = tk.Frame(window)
                     top_frame.pack()
@@ -62,8 +62,19 @@ def main():
                     tk.Label(top_frame, text='Good words:', font=('Helvetica', 16)).grid(row=1, column=4)
                     tk.Label(top_frame, text=', '.join(good), fg='green', font=('Helvetica', 16)).grid(row=2, column=4)
 
-                    tk.Button(top_frame, text='PASS', fg='red', font=('Helvetica Bold', 16), padx=10, pady=10,
-                              command=partial(pass_click, i)).grid(row=3, column=4)
+                    e = tk.Entry(top_frame)
+                    e.grid(row=3, column=4)
+
+                    def entry(i):
+                        answers.write(str(i - 1) + '.')
+                        answers.write(e.get() + '\n')
+                        var.set(e.get())
+
+                    tk.Button(top_frame, text='Enter', fg='blue', font=('Helvetica Bold', 16), padx=10, pady=10,
+                              command=entry(i)).grid(row=3, column=5)
+
+                    #tk.Button(top_frame, text='PASS', fg='red', font=('Helvetica Bold', 16), padx=10, pady=10,
+                    #           command=partial(pass_click, i)).grid(row=3, column=4)
 
                     clue_buttons = []
                     for i, item in enumerate(clues[:10]):
