@@ -5,7 +5,7 @@ import sys
 def main():
     window = tk.Tk()
     window.title('Codenames Data Collector')
-    window.geometry("1600x320")
+    window.geometry("1600x300")
 
     def close():
         window.destroy()
@@ -64,35 +64,35 @@ def main():
                     bottom_frame.pack(side='bottom')
 
                     # Quit button
-                    tk.Button(top_frame, text='QUIT', fg='red', font=('Helvetica Bold', 16), padx=5, pady=5,
-                              command=close_click).grid(row=0, column=0, columnspan=1)
+                    tk.Button(top_frame, text='QUIT', fg='red3', font=('Helvetica Bold', 16), relief='raised',
+                              padx=5, pady=5, command=close_click).grid(row=0, column=0, columnspan=1)
 
                     # Good words
                     tk.Label(top_frame, text='Good words:', font=('Helvetica', 16)).grid(row=1, column=4)
-                    tk.Label(top_frame, text=', '.join(good), fg='green', font=('Helvetica', 16)).grid(row=2, column=4)
+                    tk.Label(top_frame, text=', '.join(good), fg='forestgreen', font=('Helvetica', 16)).grid(row=2, column=4)
 
                     # Entry box
                     e = tk.Entry(top_frame, textvariable=entry_var)
                     e.grid(row=3, column=4, padx=5, pady=20)
-                    tk.Button(top_frame, text='Enter', fg='blue', font=('Helvetica Bold', 16), padx=10, pady=2,
-                              command=partial(entry, count, entry_var)).grid(row=3, column=5)
+                    tk.Button(top_frame, text='Enter', fg='DodgerBlue3', font=('Helvetica Bold', 16), relief='raised',
+                              padx=10, pady=2, command=partial(entry, count, entry_var)).grid(row=3, column=5)
 
                     # Clue buttons
                     clue_buttons = []
                     for i, item in enumerate(clues[:10]):
-                        clue_buttons.append(tk.Button(bottom_frame, text=item, fg='blue', font=('Helvetica', 16),
-                                                      padx=20, pady=10, command=partial(btn_click, count, item)))
+                        clue_buttons.append(tk.Button(bottom_frame, text=item, fg='blue4', font=('Helvetica', 16),
+                                                      padx=20, pady=8, command=partial(btn_click, count, item)))
                         clue_buttons[-1].grid(row=1, column=i)
 
                     clue_buttons_2 = []
                     for i, item in enumerate(clues[10:]):
-                        clue_buttons_2.append(tk.Button(bottom_frame, text=item, fg='blue', font=('Helvetica', 16),
-                                                        padx=20, pady=10, command=partial(btn_click, count, item)))
+                        clue_buttons_2.append(tk.Button(bottom_frame, text=item, fg='blue4', font=('Helvetica', 16),
+                                                        padx=20, pady=8, command=partial(btn_click, count, item)))
                         clue_buttons_2[-1].grid(row=2, column=i)
 
                     # Pass button
-                    tk.Button(bottom_frame, text='PASS', fg='green', font=('Helvetica Bold', 16), padx=5, pady=10,
-                              command=partial(pass_click, count)).grid(row=4, column=4, columnspan=2)
+                    tk.Button(bottom_frame, text='PASS', fg='DodgerBlue3', font=('Helvetica Bold', 16), relief='raised',
+                              padx=10, pady=5, command=partial(pass_click, count)).grid(row=4, column=4, columnspan=2)
 
                     # wait for click
                     window.wait_variable(var)
