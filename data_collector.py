@@ -14,6 +14,7 @@ def main():
     window.protocol("WM_DELETE_WINDOW", close)
 
     var = tk.StringVar()
+    entry_var = tk.StringVar()
 
     try:
         current_count = len(open('data.txt').readlines())
@@ -35,15 +36,21 @@ def main():
                 should_close.set(True)
                 var.set("")
 
+            def entry(i, entry_var):
+                answers.write(str(i - 1) + '.')
+                answers.write(entry_var.get() + '\n')
+                e.delete(0, 'end')
+                var.set(entry_var.get())
+
             def pass_click(i):
                 answers.write(str(i - 1) + '.')
                 answers.write('No good clues' + '\n')
                 var.set(item.strip())
 
-            i = 1
+            count = 1
             for line in examples:
-                if i <= current_count:
-                    i += 1
+                if count <= current_count:
+                    count += 1
                     pass
                 else:
                     input_line = line.split('.')
@@ -56,37 +63,36 @@ def main():
                     bottom_frame = tk.Frame(window)
                     bottom_frame.pack(side='bottom')
 
-                    tk.Button(top_frame, text='QUIT', fg='red', font=('Helvetica Bold', 16), padx=10, pady=10,
-                              command=close_click).grid(row=1, column=0)
+                    # Quit button
+                    tk.Button(top_frame, text='QUIT', fg='red', font=('Helvetica Bold', 16), padx=5, pady=5,
+                              command=close_click).grid(row=0, column=0, columnspan=1)
 
+                    # Good words
                     tk.Label(top_frame, text='Good words:', font=('Helvetica', 16)).grid(row=1, column=4)
                     tk.Label(top_frame, text=', '.join(good), fg='green', font=('Helvetica', 16)).grid(row=2, column=4)
 
-                    e = tk.Entry(top_frame)
-                    e.grid(row=3, column=4)
+                    # Entry box
+                    e = tk.Entry(top_frame, textvariable=entry_var)
+                    e.grid(row=3, column=4, padx=5, pady=20)
+                    tk.Button(top_frame, text='Enter', fg='blue', font=('Helvetica Bold', 16), padx=10, pady=2,
+                              command=partial(entry, count, entry_var)).grid(row=3, column=5)
 
-                    def entry(i):
-                        answers.write(str(i - 1) + '.')
-                        answers.write(e.get() + '\n')
-                        var.set(e.get())
-
-                    tk.Button(top_frame, text='Enter', fg='blue', font=('Helvetica Bold', 16), padx=10, pady=10,
-                              command=entry(i)).grid(row=3, column=5)
-
-                    #tk.Button(top_frame, text='PASS', fg='red', font=('Helvetica Bold', 16), padx=10, pady=10,
-                    #           command=partial(pass_click, i)).grid(row=3, column=4)
-
+                    # Clue buttons
                     clue_buttons = []
                     for i, item in enumerate(clues[:10]):
                         clue_buttons.append(tk.Button(bottom_frame, text=item, fg='blue', font=('Helvetica', 16),
-                                                      padx=20, pady=10, command=partial(btn_click, i, item)))
-                        clue_buttons[-1].grid(row=4, column=i)
+                                                      padx=20, pady=10, command=partial(btn_click, count, item)))
+                        clue_buttons[-1].grid(row=1, column=i)
 
                     clue_buttons_2 = []
                     for i, item in enumerate(clues[10:]):
                         clue_buttons_2.append(tk.Button(bottom_frame, text=item, fg='blue', font=('Helvetica', 16),
-                                                        padx=20, pady=10, command=partial(btn_click, i, item)))
-                        clue_buttons_2[-1].grid(row=5, column=i)
+                                                        padx=20, pady=10, command=partial(btn_click, count, item)))
+                        clue_buttons_2[-1].grid(row=2, column=i)
+
+                    # Pass button
+                    tk.Button(bottom_frame, text='PASS', fg='green', font=('Helvetica Bold', 16), padx=5, pady=10,
+                              command=partial(pass_click, count)).grid(row=4, column=4, columnspan=2)
 
                     # wait for click
                     window.wait_variable(var)
@@ -98,7 +104,7 @@ def main():
                     top_frame.destroy()
                     bottom_frame.destroy()
 
-                    i += 1
+                    count += 1
 
 if __name__ == '__main__':
     main()
