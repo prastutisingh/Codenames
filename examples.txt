@@ -1,10 +1,48 @@
-0.beach, stick, circle, green, bend, lovers, swing, hang, hook, sit, dancing, sitting, bar, dance
-1.ruler, stick, lab, shot, magnetic, scales, instrument, measuring, magnet, keyboard, math, sheet, tool, measurement
-2.trip, flute, glove, rock, sewing, suzuki, knitting, hose, needle, disposable, scarf, holder, fitting, nose
-3.wave, giant, queen, racket, sea, moon, island, earth, rock, shows, golden, blue, featured, dark
-4.hospital, circle, knight, canada, temple, carroll, manor, trinity, chapel, lane, beverly, franklin, allen, harry
-5.grass, march, model, dice, maintenance, field, growth, plant, spring, local, outside, country, beautiful, national
-6.moscow, canada, dress, iron, attending, invited, paris, vegas, parties, invitation, attend, destination, student, anna
-7.well, queen, lead, arm, wonderful, night, happy, lady, love, role, known, meet, truly, choice
-8.bark, hole, board, kangaroo, layer, thickness, thin, surface, remove, wood, forming, rim, solid, typically
-9.lawyer, orange, greece, fair, hawaii, apartment, syracuse, alexander, mexico, georgia, saint, costa, discovered, meanwhile
+0.paste, dress, server, the, get, market, offer, plan, tags, face, save, jobs, store, drive, address, wedding, homes, practice, super, michael, shot, fit, focus
+3.log, rat, jet, thread, cash, bag, delivery, connection, cat, bowl, pattern, trouble, signal, agents, hole, bottle, settings, zip, ben, pocket, tiny, garage, storm
+5.capital, robin, iron, buffer, branded, alphabet, defect, flagship, accountants, supervisors, flint, tyre, bankrupt, maroon, sahara, malik, sulfur, expelled, armchair, tabloid, skyscraper
+7.teacher, giant, ruler, driver, partner, experts, employee, killer, citizen, operator, worker, lion, instructor, soldier, monkey, advisor, priest, mentor, teenager, keeper, servant, clown, thief
+9.dwarf, glass, phoenix, windows, blue, box, michael, trip, cash, window, wine, fully, delivery, connection, cat, movement, core, vacation, plastic, frame, stone, patch, chocolate
+10.water, server, wall, room, windows, space, address, door, screen, glass, kitchen, cash, window, wine, delivery, connection, lighting, truck, bowl, bath, milk, doors, bottle
+15.bond, washington, needle, keep, office, favorite, michael, glass, thread, cash, window, delivery, charge, connection, teen, cat, recipe, core, vacation, trial, sugar, bowl, diamond
+18.kangaroo, jet, gas, michael, cash, delivery, core, chocolate, orange, fixed, milk, ben, tube, harry, acid, garage, affect, tony, belt, giant, liquid, butter, purple
+22.hook, bank, tower, market, plan, store, box, homes, michael, channel, plans, tool, hospital, delivery, exchange, port, recipe, core, frame, farm, apartment, filter, bowl
+26.fan, needle, phoenix, the, he, his, get, her, them, got, lot, keep, able, working, story, office, size, based, type, tags, box, address, weight
+27.lock, mug, port, market, plan, tags, store, box, address, homes, gift, michael, easily, focus, cash, window, bay, directly, fully, delivery, charge, connection, teen
+29.millionaire, fan, night, cash, bowl, pocket, garage, storm, giant, hero, monster, celebration, lounge, killer, lemon, dying, doll, steal, painful, warehouse, fairy, horizon, legends
+32.eye, eagle, slip, spot, core, orange, shape, filter, bear, bowl, signal, garage, giant, circle, liquid, purple, counter, bug, chrome, strike, dealer, juice, egg
+33.needle, eye, mouth, face, eyes, screen, bowl, bottle, neck, pocket, finger, rack, lemon, puzzle, bubble, belly, floating, fork, tooth, snack, dome, jaw, eyed
+34.box, oil, telescope, facility, fabric, tube, tower, sensor, pipe, container, warehouse, cables, hose, labs, towers, drilling, buffer, scanner, deposits, holdings, harness, umbrella, leasing
+36.shadow, lemon, robin, michael, trip, cash, window, wine, delivery, connection, chris, cat, peter, movement, core, crazy, patch, kid, count, chocolate, orange, truck, bear
+38.mug, king, shadow, his, working, story, question, box, baby, sun, rock, gift, brand, michael, glass, trip, attention, cash, bag, dress, window, wine, fully
+44.agent, hood, rome, michael, moving, cash, window, delivery, teen, core, vacation, biggest, orange, vision, truck, bowl, trouble, agents, plate, pussy, ben, crisis, cutting
+45.eagle, whale, center, core, native, giant, purple, cartoon, lion, warehouse, monkey, vanilla, tomato, buck, corners, rabbit, spider, skull, dome, cinnamon, teenager, turtle, hawk
+46.band, eagle, hotel, hospital, lion, monkey, headquarters, elephant, circus, yacht, mansion, flagship, kite, lizard, tabloid, hôtel
+47.agent, tower, tooth, the, working, story, office, plan, tags, face, box, favorite, homes, michael, moving, focus, glass, thread, cash, ability, drug, dress, window
+48.band, shadow, oil, wine, sensor, pipe, monkey, hose, dome, circus, umbrella, pots, flagship, kite, lizard, tabloid, moniker
+50.queen, band, mammoth, the, plan, tags, super, dress, teen, significant, largest, brother, recipe, core, plastic, edge, frame, appear, biggest, inn, filter, bear, bowl
+51.oil, yard, laser, gas, lighting, iron, milk, fabric, tube, nursing, garage, butter, concrete, sensor, pipe, tissue, corn, seal, lawn, container, cooling, beans, foam
+53.india, hospital, whale, facility, planet, plane, sensor, clinic, desert, pipe, seal, cartoon, warehouse, monkey, vanilla, headquarters, shrimp, soy, dome, circus, turtle, bali, umbrella
+56.jet, kid, glass, his, them, lot, water, working, story, windows, reading, blue, box, baby, guy, stuff, rock, unique, gift, michael, parents, trip, break
+59.head, wake, orange, his, out, get, set, working, tags, face, save, clear, favorite, huge, screen, seem, fit, moving, focus, thread, attention, cash, difficult
+60.telescope, sub, compound, specific, drug, spot, core, frame, bowl, pattern, wire, cutting, tube, hidden, acid, garage, circle, liquid, investigation, plane, lab, pot, setup
+61.mercury, lock, berlin, sydney, umbrella, eugene, popcorn, furnace, flint, scarlet, sulfur, astoria, prussia, ashby
+65.needle, lead, jam, get, save, drive, focus, leading, drug, select, dress, charge, teen, reach, attack, ride, spot, grow, core, rule, appear, sugar, bowl
+66.mammoth, model, amazon, models, recipe, frame, diamond, detailed, lifestyle, plane, guidelines, setup, sensor, epic, camping, deadline, cabin, hub, showcase, pcs, vessel, accessory, buffet
+67.lab, laser, shot, plan, medical, drug, tool, delivery, testing, spot, core, lighting, processing, signal, wire, cutting, tube, nursing, acid, garage, argument, graphic, liquid
+69.orange, bond, rock, his, out, them, lot, keep, working, story, tags, blue, box, stuff, favorite, practice, huge, michael, seem, fit, moving, focus, glass
+72.ghost, hole, boom, box, baby, cash, connection, flash, movement, kid, chocolate, fantastic, bowl, trouble, signal, jump, bottle, planet, zip, ben, crisis, pocket, tiny
+73.kid, trip, press, plan, homes, michael, focus, plans, cash, tool, delivery, teen, rental, recipe, core, vacation, bowl, expert, native, deliver, settings, planet, ben
+74.africa, hood, root, core, bowl, pattern, native, planet, hidden, garage, affect, storm, giant, circle, grown, zealand, sensor, oven, lamp, heading, galaxy, roots, lemon
+75.gas, board, rock, cash, delivery, lighting, truck, milk, tube, garage, liquid, butter, juice, sensor, pipe, container, warehouse, plasma, hose, horizon, buffer, fog, dome
+77.box, box, millionaire, story, office, size, jobs, store, homes, gift, brand, michael, cash, tool, dress, delivery, charge, connection, package, statement, rental, movement, recipe
+80.horseshoe, needle, jam, the, of, is, on, with, at, as, have, an, can, he, his, get, her, got, under, keep, getting, within, able
+81.board, olympus, ham, garage, phoenix, dean, lawn, headquarters, buck, banana, umbrella, eugene, clare, brotherhood, flagship, cheshire, hastings, tyre, sanity, sheridan, lyons, sahara, tor
+83.boom, belt, fall, working, tags, huge, moving, focus, thread, break, cash, delivery, flash, teen, reach, drop, movement, core, vacation, biggest, demand, orange, bowl
+84.maple, paste, laser, fabric, tube, nursing, acid, graphic, butter, portable, concrete, sensor, tissue, corn, seal, cooling, foam, imaging, vacuum, ceramic, wheat, broker, dried
+86.millionaire, center, vacuum, plan, homes, focus, classic, cash, difficult, delivery, largest, movement, core, plastic, filter, fixed, bowl, diamond, expert, recovery, premium, native, crisis
+87.time, bank, box, story, market, office, store, cash, delivery, connection, movement, apartment, bowl, pattern, bottle, planet, pocket, tube, garage, giant, dealer, setup, celebration
+90.vacuum, jet, root, michael, thread, trip, cash, delivery, connection, core, bowl, trouble, jackson, milk, connected, native, bottle, settings, zip, ben, cutting, pocket, tube
+92.boom, ruler, berry, huge, cash, window, delivery, kid, chocolate, orange, trouble, jump, pussy, ben, harry, tiny, obvious, garage, viewing, tony, giant, circle, liquid
+97.nurse, box, band, office, dress, hospital, doctor, driver, signal, planet, tube, garage, giant, sensor, lounge, clinic, pipe, killer, operator, uniform, soldier, warehouse, monkey
+99.kid, circle, england, bowl, trouble, tiny, garage, giant, setup, egg, babies, oven, lemon, cookie, puzzle, doll, thanksgiving, binding, outfit, homemade, belly, monkey, sticks

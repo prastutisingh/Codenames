@@ -27,8 +27,8 @@ def main():
             should_close = tk.BooleanVar()
 
             # write chosen clue to answers file when button is clicked
-            def btn_click(i, item):
-                answers.write(str(i - 1) + '.')
+            def btn_click(num, item):
+                answers.write(num + '.')
                 answers.write(item.strip() + '\n')
                 var.set(item.strip())
 
@@ -36,14 +36,14 @@ def main():
                 should_close.set(True)
                 var.set("")
 
-            def entry(i, entry_var):
-                answers.write(str(i - 1) + '.')
+            def entry(num, entry_var):
+                answers.write(num + '.')
                 answers.write(entry_var.get() + '\n')
                 e.delete(0, 'end')
                 var.set(entry_var.get())
 
-            def pass_click(i):
-                answers.write(str(i - 1) + '.')
+            def pass_click(num):
+                answers.write(num + '.')
                 answers.write('No good clues' + '\n')
                 var.set(item.strip())
 
@@ -54,9 +54,10 @@ def main():
                     pass
                 else:
                     input_line = line.split('.')
+                    num = input_line[0]
                     full_list = input_line[1].strip('\n').split(',')
                     good = full_list[:3]
-                    clues = full_list[4:]
+                    clues = full_list[3:]
 
                     top_frame = tk.Frame(window)
                     top_frame.pack()
@@ -75,24 +76,24 @@ def main():
                     e = tk.Entry(top_frame, textvariable=entry_var)
                     e.grid(row=3, column=4, padx=5, pady=20)
                     tk.Button(top_frame, text='Enter', fg='DodgerBlue3', font=('Helvetica Bold', 16), relief='raised',
-                              padx=10, pady=2, command=partial(entry, count, entry_var)).grid(row=3, column=5)
+                              padx=10, pady=2, command=partial(entry, num, entry_var)).grid(row=3, column=5)
 
                     # Clue buttons
                     clue_buttons = []
                     for i, item in enumerate(clues[:10]):
                         clue_buttons.append(tk.Button(bottom_frame, text=item, fg='blue4', font=('Helvetica', 16),
-                                                      padx=20, pady=8, command=partial(btn_click, count, item)))
+                                                      padx=20, pady=8, command=partial(btn_click, num, item)))
                         clue_buttons[-1].grid(row=1, column=i)
 
                     clue_buttons_2 = []
                     for i, item in enumerate(clues[10:]):
                         clue_buttons_2.append(tk.Button(bottom_frame, text=item, fg='blue4', font=('Helvetica', 16),
-                                                        padx=20, pady=8, command=partial(btn_click, count, item)))
+                                                        padx=20, pady=8, command=partial(btn_click, num, item)))
                         clue_buttons_2[-1].grid(row=2, column=i)
 
                     # Pass button
                     tk.Button(bottom_frame, text='PASS', fg='DodgerBlue3', font=('Helvetica Bold', 16), relief='raised',
-                              padx=10, pady=5, command=partial(pass_click, count)).grid(row=4, column=4, columnspan=2)
+                              padx=10, pady=5, command=partial(pass_click, num)).grid(row=4, column=4, columnspan=2)
 
                     # wait for click
                     window.wait_variable(var)
