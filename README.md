@@ -1,26 +1,16 @@
 # Codenames
 
-## Data Collection
-What size vocabulary should we use?
-- 1000
-- 5000
-- 10000
-- 20000
-- 50000
+#### To write your own clues: 
+Find cell with this line: 
+generate_n_examples(1000, bert_embedding, 'cosine', 0.00003788)
+This will write board + clues to a txt file that can be run to collect data. 
 
-Number of examples? 
+#### To play around with parameters: 
+Comment out line generate_n_examples in same cell as above and uncomment the lines below and change parameters, etc. 
 
-Choice of embeddings (if time)
-- GloVe
-- BERT/ELMO
-
-## Model Parameters
-Choice of clue generating function: 
-- Cosine distance (is this differentiable?) 
-  - weights on bad word, death word
-- v.T * w
-- something else???
-
-Loss 
-- Rank choice
-- Cross-entropy
+#### To collect data: 
+Run the python file data_collector.py (make sure that examples.txt is in the folder). 
+Instructions: 
+- Either choose a word that you think is a good clue, type in your own and press enter or hit pass. 
+- VERY IMPORTANT: To stop collecting, hit the QUIT button. Don’t hit x. Doesn’t work for some tkinter reason. 
+- You can pick up where you left off by just running data_collector.py again. 
