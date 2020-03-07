@@ -56,8 +56,8 @@ def main():
                     input_line = line.split('.')
                     num = input_line[0]
                     full_list = input_line[1].strip('\n').split(',')
-                    good = full_list[:3]
-                    clues = full_list[3:]
+                    good = full_list[:2]
+                    clues = full_list[2:]
 
                     top_frame = tk.Frame(window)
                     top_frame.pack()
@@ -80,13 +80,13 @@ def main():
 
                     # Clue buttons
                     clue_buttons = []
-                    for i, item in enumerate(clues[:10]):
+                    for i, item in enumerate(clues[:5]):
                         clue_buttons.append(tk.Button(bottom_frame, text=item, fg='blue4', font=('Helvetica', 16),
                                                       padx=20, pady=8, command=partial(btn_click, num, item)))
                         clue_buttons[-1].grid(row=1, column=i)
 
                     clue_buttons_2 = []
-                    for i, item in enumerate(clues[10:]):
+                    for i, item in enumerate(clues[5:10]):
                         clue_buttons_2.append(tk.Button(bottom_frame, text=item, fg='blue4', font=('Helvetica', 16),
                                                         padx=20, pady=8, command=partial(btn_click, num, item)))
                         clue_buttons_2[-1].grid(row=2, column=i)
